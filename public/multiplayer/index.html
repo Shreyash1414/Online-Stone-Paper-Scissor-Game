@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper scissors</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h5>Rock Paper scissors</h5>
+    </div>
+
+    <div class="container">
+        <div class="score">
+            <span id="comp">0</span> <span>:</span> <span id="user">0</span>
+        </div>
+
+        <div class="com">
+            <span id="p1">Comp</span>
+        </div>
+        <div class="hum">
+            <span id="p2">User</span>
+        </div>
+
+        <div class="reason">
+            <span id="verdict"></span>
+            <span id="result"></span>
+        </div>
+
+        <img id="paper" src="./assets/img/paper.png" alt="" name="paper" class="click">
+        <img id="stone" src="./assets/img/stone.png" alt="" name="stone" class="click">
+        <img id="scissor" src="./assets/img/scissor.png" alt="" name="scissor" class="click">
+        <img id="userImg" alt="">
+        <img id="compImg" alt="">
+
+        <p id="set">Make your Move</p>
+
+        
+    </div>
+
+      <div class="asa">
+        <p id="roomId">ROOM ID:</p>
+      </div>
+    <div class="wrapper">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <br>
+
+    </div>
+    
+  
+    
+
+
+    <script src="./assets/script/index.js"></script>
+</body>
+</html>

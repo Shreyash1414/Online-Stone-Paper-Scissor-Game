@@ -1,0 +1,207 @@
+/* Header */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.header{
+    padding: 0px;;
+    text-align: center;
+    font-size: 30px;
+    /* background-color: aqua; */
+    padding-top:15px ;
+    padding-bottom: 15px;
+}
+
+/* Score Section */
+.container{
+ position: relative;
+ text-align: center;
+ background-color: #22232e;
+ height: 692px;
+ 
+}
+.score{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 4px;
+    width: 145px;
+    height: 45px;
+    border: 2px solid white;
+    display: inline-block;
+    padding-top:9px ;
+}
+
+.com{
+    padding:2px 2px 2px 2px ;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 676px;
+    font-size: 12px;
+}
+.hum{
+    padding:2px 2px 2px 2px ;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 825px;
+    font-size: 12px;
+}
+
+/* Verdict */
+.reason{
+    margin-top: 20px;
+    position: absolute;
+    color: white;
+    width: 350px;
+    left: 592px;
+    font-size: 24px;
+    font-weight: 900;
+   
+}
+
+#paper{
+    cursor: pointer;
+    top: 150px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 620px;
+}
+
+#stone{
+    cursor: pointer;
+
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 150px;
+    left: 726px;
+
+
+}
+
+#scissor{
+    cursor: pointer;
+    top: 150px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 835px;
+    background-color: white;
+    border-radius: 150px;
+
+
+}
+
+#compImg{
+    background-color: white;
+    border-radius: 150px;
+    cursor: pointer;
+    top: 20px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 500px;
+}
+
+#userImg{
+    background-color: white;
+    border-radius: 150px;
+    cursor: pointer;
+    top: 20px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 950px;
+}
+
+#set{
+    position: absolute;
+    top:245px;
+    left: 715px;
+    font-weight: bolder;
+    color: white;
+
+}
+
+
+
+/* Loader CSS */
+
+
+  .wrapper {
+    position: absolute;
+    display: flex;
+    column-gap: 10px;
+    top: 300px;
+    left: 700px;
+  }
+  .wrapper .dot {
+    margin-top: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #22232e;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: animate 1s ease-in-out infinite alternate;
+    /* position: relative; */
+  }
+  .dot:nth-child(1) {
+    animation-delay: -0.25s;
+  }
+  .dot:nth-child(2) {
+    background: #22232e;
+    animation-delay: -0.5s;
+  }
+  .dot:nth-child(3) {
+    background:#22232e;
+    animation-delay: -0.75s;
+  }
+  .dot:nth-child(4) {
+    background:#22232e;
+    animation-delay: -1s;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+  
+
+
+
+  /* The loader note */
+  .asa{
+    position:absolute;
+    top: 200px;
+    left: 650px;
+    display: none;
+
+
+    
+  }
+
+  .wrapper{
+    display: none;
+  }
+  #roomId{
+    font-size: 25px;
+  }
